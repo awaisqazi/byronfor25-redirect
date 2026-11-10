@@ -1,0 +1,215 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Friends of Byron Sigcho Lopez//byronfor25.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Byron Sigcho-Lopez\, 25th Ward: dates
+X-WR-TIMEZONE:America/Chicago
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:canvass-2026-10-11-anticonquista@byronfor25.com
+DTSTAMP:20261110T044005Z
+DTSTART:20261011T160000Z
+DTEND:20261011T190000Z
+SUMMARY:Petition Canvass
+LOCATION:Anticonquista Cafe\, 952 W 18th St\, Chicago
+DESCRIPTION:Meet at the cafe\, then head out on the doors to gather the sig
+ natures that put Byron on the February 23 ballot.\nRSVP: https://actionnet
+ work.org/events/byronfor25-1025-signature-collection-canvass-2\nhttps://si
+ gchofor25.com/volunteer/#show-up
+URL:https://actionnetwork.org/events/byronfor25-1025-signature-collection-c
+ anvass-2
+END:VEVENT
+BEGIN:VEVENT
+UID:meetup-2026-10-17-skylark@byronfor25.com
+DTSTAMP:20261110T044005Z
+DTSTART:20261018T000000Z
+SUMMARY:Spooky Fundraiser at Skylark
+LOCATION:Skylark\, 2149 S Halsted St\, Chicago
+DESCRIPTION:Halloween with Byron and neighbors at Skylark. Costumes encoura
+ ged\, free entry\, donations welcome\, and no one is turned away for lack 
+ of funds.\nhttps://sigchofor25.com/volunteer/#show-up
+URL:https://sigchofor25.com/volunteer/#show-up
+END:VEVENT
+BEGIN:VEVENT
+UID:canvass-2026-10-18-cermak@byronfor25.com
+DTSTAMP:20261110T044005Z
+DTSTART:20261018T160000Z
+DTEND:20261018T190000Z
+SUMMARY:Petition Canvass
+LOCATION:25th Ward IPO office\, 2102 W Cermak Rd\, Chicago
+DESCRIPTION:Knock doors with neighbors and gather the signatures that put B
+ yron on the February 23 ballot.\nRSVP: https://actionnetwork.org/events/by
+ ronfor25-1010-signature-collection-canvass-2/\nhttps://sigchofor25.com/vol
+ unteer/#show-up
+URL:https://actionnetwork.org/events/byronfor25-1010-signature-collection-c
+ anvass-2/
+END:VEVENT
+BEGIN:VEVENT
+UID:petition-filing-2026@byronfor25.com
+DTSTAMP:20261110T044005Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261027
+SUMMARY:Petition filing at the Board of Elections
+LOCATION:Chicago Board of Elections
+DESCRIPTION:Candidates file their nominating petitions. The signatures we g
+ ather go in this week.\nhttps://sigchofor25.com/volunteer/#show-up
+URL:https://sigchofor25.com/volunteer/#show-up
+END:VEVENT
+BEGIN:VEVENT
+UID:canvass-2026-10-21-cermak@byronfor25.com
+DTSTAMP:20261110T044005Z
+DTSTART:20261021T223000Z
+DTEND:20261022T003000Z
+SUMMARY:Weeknight Petition Canvass
+LOCATION:25th Ward IPO office\, 2102 W Cermak Rd\, Chicago
+DESCRIPTION:Come after work\, knock doors with neighbors\, and gather the s
+ ignatures that put Byron on the ballot.\nRSVP: https://actionnetwork.org/e
+ vents/byronfor25-1021-signature-collection-canvass/\nhttps://sigchofor25.c
+ om/volunteer/#show-up
+URL:https://actionnetwork.org/events/byronfor25-1021-signature-collection-c
+ anvass/
+END:VEVENT
+BEGIN:VEVENT
+UID:meetup-2026-10-23-citykey-printing@byronfor25.com
+DTSTAMP:20261110T044005Z
+DTSTART:20261023T190000Z
+DTEND:20261023T220000Z
+SUMMARY:CityKey Mobile Printing Day
+LOCATION:25th Ward office\, 2100 W Cermak Rd\, Chicago
+DESCRIPTION:Get your CityKey ID printed at the ward office with the City Cl
+ erk's office. By appointment only\; book at getcitykey.com.\nRSVP: https:/
+ /www.getcitykey.com\nhttps://sigchofor25.com/volunteer/#show-up
+URL:https://www.getcitykey.com
+END:VEVENT
+BEGIN:VEVENT
+UID:meetup-2026-10-23-halloween-block-party@byronfor25.com
+DTSTAMP:20261110T044005Z
+DTSTART:20261023T200000Z
+DTEND:20261024T003000Z
+SUMMARY:25th Ward Halloween Block Party
+LOCATION:25th Ward office\, 2100 W Cermak Rd\, Chicago
+DESCRIPTION:An afternoon for families at the ward office: costume giveaways
+ \, a bouncy house\, raffles\, and a movie screening at 6 PM.\nhttps://sigc
+ hofor25.com/volunteer/#show-up
+URL:https://sigchofor25.com/volunteer/#show-up
+END:VEVENT
+BEGIN:VEVENT
+UID:canvass-2026-10-25-latteaa@byronfor25.com
+DTSTAMP:20261110T044005Z
+DTSTART:20261025T150000Z
+DTEND:20261025T180000Z
+SUMMARY:Petition Canvass
+LOCATION:Cafe Latteaa\, 3536 W 26th St\, Chicago
+DESCRIPTION:The last Sunday before filing closes: knock doors and gather th
+ e signatures that put Byron on the ballot.\nRSVP: https://actionnetwork.or
+ g/events/byronfor25-1025-signature-collection-canvass/\nhttps://sigchofor2
+ 5.com/volunteer/#show-up
+URL:https://actionnetwork.org/events/byronfor25-1025-signature-collection-c
+ anvass/
+END:VEVENT
+BEGIN:VEVENT
+UID:meetup-2026-10-25-souls-to-the-polls@byronfor25.com
+DTSTAMP:20261110T044005Z
+DTSTART:20261025T163000Z
+SUMMARY:Souls to the Polls
+LOCATION:Holy Ground\, 2242 S Damen Ave\, Chicago
+DESCRIPTION:Gather at Holy Ground\, make signs with neighbors\, and march t
+ ogether to early vote.\nhttps://sigchofor25.com/volunteer/#show-up
+URL:https://sigchofor25.com/volunteer/#show-up
+END:VEVENT
+BEGIN:VEVENT
+UID:objections-2026@byronfor25.com
+DTSTAMP:20261110T044005Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261103
+SUMMARY:Objection period for candidate petitions
+LOCATION:Chicago Board of Elections
+DESCRIPTION:Objections to candidate petitions can be filed in this window.\
+ nhttps://sigchofor25.com/volunteer/#show-up
+URL:https://sigchofor25.com/volunteer/#show-up
+END:VEVENT
+BEGIN:VEVENT
+UID:vote-by-mail-opens-2026@byronfor25.com
+DTSTAMP:20261110T044005Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:Vote-by-mail applications open
+LOCATION:Chicago Board of Elections
+DESCRIPTION:Apply to vote by mail with the Chicago Board of Elections.\nhtt
+ ps://sigchofor25.com/volunteer/#show-up
+URL:https://sigchofor25.com/volunteer/#show-up
+END:VEVENT
+BEGIN:VEVENT
+UID:meetup-2026-12-05-art-auction-hairpin@byronfor25.com
+DTSTAMP:20261110T044005Z
+DTSTART:20261205T230000Z
+DTEND:20261206T030000Z
+SUMMARY:Art Auction for the Socialist Slate
+LOCATION:Hairpin Arts Center\, 2810 N Milwaukee Ave\, 2nd Floor\, Chicago
+DESCRIPTION:Chicago DSA's silent art auction for its PAC and the Socialist 
+ Slate: art\, food and a bar. RSVP now\; tickets go on sale later.\nRSVP: h
+ ttps://actionnetwork.org/events/art-auction-cdsa-socialist-slate-fundraise
+ r\nhttps://sigchofor25.com/volunteer/#show-up
+URL:https://actionnetwork.org/events/art-auction-cdsa-socialist-slate-fundr
+ aiser
+END:VEVENT
+BEGIN:VEVENT
+UID:early-voting-2027@byronfor25.com
+DTSTAMP:20261110T044005Z
+DTSTART;VALUE=DATE:20270114
+DTEND;VALUE=DATE:20270115
+SUMMARY:Early voting can begin
+LOCATION:Chicago Board of Elections
+DESCRIPTION:Early voting starts no earlier than this date.\nhttps://sigchof
+ or25.com/volunteer/#show-up
+URL:https://sigchofor25.com/volunteer/#show-up
+END:VEVENT
+BEGIN:VEVENT
+UID:registration-closes-2027@byronfor25.com
+DTSTAMP:20261110T044005Z
+DTSTART;VALUE=DATE:20270126
+DTEND;VALUE=DATE:20270127
+SUMMARY:Regular voter registration closes
+LOCATION:Chicago Board of Elections
+DESCRIPTION:Last day for regular registration. Grace registration follows.\
+ nhttps://sigchofor25.com/volunteer/#show-up
+URL:https://sigchofor25.com/volunteer/#show-up
+END:VEVENT
+BEGIN:VEVENT
+UID:election-day-2027@byronfor25.com
+DTSTAMP:20261110T044005Z
+DTSTART:20270223T120000Z
+DTEND:20270224T010000Z
+SUMMARY:Election Day
+LOCATION:Your polling place in the 25th Ward
+DESCRIPTION:Polls are open from 6 AM to 7 PM. The 25th Ward decides.\nhttps
+ ://sigchofor25.com/volunteer/#show-up
+URL:https://sigchofor25.com/volunteer/#show-up
+END:VEVENT
+BEGIN:VEVENT
+UID:ward-night-weekly@byronfor25.com
+DTSTAMP:20261110T044005Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+RRULE:FREQ=WEEKLY;BYDAY=TU;COUNT=20
+SUMMARY:Ward Night
+LOCATION:25th Ward office
+DESCRIPTION:Every Tuesday\nThe ward office\, every Tuesday since 2019. Brin
+ g a question or come to help.\nhttps://25thward.org/
+URL:https://25thward.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:sunday-canvass-weekly@byronfor25.com
+DTSTAMP:20261110T044005Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+RRULE:FREQ=WEEKLY;BYDAY=SU;COUNT=20
+SUMMARY:Sunday Canvasses
+LOCATION:The canvass map
+DESCRIPTION:Most Sundays\nNeighbors and the citywide crew\, most Sundays. F
+ ind the shift nearest you on the map.\nhttps://canvass.chicagodsa.org
+URL:https://canvass.chicagodsa.org
+END:VEVENT
+END:VCALENDAR
