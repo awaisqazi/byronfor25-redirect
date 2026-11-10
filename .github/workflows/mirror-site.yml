@@ -1,0 +1,94 @@
+name: Mirror the campaign site
+
+# byronfor25.com is the secondary address. It serves a full copy of the site
+# that lives at sigchofor25.com, built from the same source
+# (awaisqazi/BSL-for-Congress). Every 15 minutes this checks whether the main
+# repo has a new commit and, if so, rebuilds and redeploys the copy.
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    outputs:
+      sha: ${{ steps.source.outputs.sha }}
+      build: ${{ steps.source.outputs.build }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: source
+        run: |
+          sha=$(git ls-remote https://github.com/awaisqazi/BSL-for-Congress.git refs/heads/main | cut -f1)
+          test -n "$sha"
+          echo "sha=$sha" >> "$GITHUB_OUTPUT"
+          if [ "${{ github.event_name }}" != "schedule" ] || [ "$sha" != "$(cat .mirrored-sha 2>/dev/null)" ]; then
+            echo "build=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "build=false" >> "$GITHUB_OUTPUT"
+          fi
+
+  build:
+    needs: check
+    if: needs.check.outputs.build == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the site source
+        uses: actions/checkout@v4
+        with:
+          repository: awaisqazi/BSL-for-Congress
+          ref: ${{ needs.check.outputs.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Build Astro
+        run: npm run build
+        env:
+          PUBLIC_SUPABASE_URL: ${{ vars.PUBLIC_SUPABASE_URL }}
+          PUBLIC_SUPABASE_ANON_KEY: ${{ vars.PUBLIC_SUPABASE_ANON_KEY }}
+      - name: Drop the main site's CNAME file
+        run: rm -f dist/CNAME
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+
+  deploy:
+    needs: [check, build]
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
+
+  record:
+    needs: [check, deploy]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Record the mirrored commit
+        run: |
+          echo "${{ needs.check.outputs.sha }}" > .mirrored-sha
+          if [ -n "$(git status --porcelain .mirrored-sha)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add .mirrored-sha
+            git commit -m "Mirrored BSL-for-Congress@${{ needs.check.outputs.sha }}"
+            git pull --rebase origin main
+            git push
+          fi
