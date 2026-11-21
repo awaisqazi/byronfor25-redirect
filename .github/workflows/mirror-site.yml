@@ -60,6 +60,9 @@ jobs:
         env:
           PUBLIC_SUPABASE_URL: ${{ vars.PUBLIC_SUPABASE_URL }}
           PUBLIC_SUPABASE_ANON_KEY: ${{ vars.PUBLIC_SUPABASE_ANON_KEY }}
+          # Bot check (Turnstile + the sigchofor25-forms Worker), same as the main site.
+          PUBLIC_TURNSTILE_SITEKEY: ${{ vars.PUBLIC_TURNSTILE_SITEKEY }}
+          PUBLIC_FORMS_ENDPOINT: ${{ vars.PUBLIC_FORMS_ENDPOINT }}
       - name: Drop the main site's CNAME file
         run: rm -f dist/CNAME
       - uses: actions/upload-pages-artifact@v3
